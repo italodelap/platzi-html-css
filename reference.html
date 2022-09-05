@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Hay etiquetas que tienen apertura y cierre y, otras, que tienen auto-cierre -->
+<html lang="es">
+  <!-- El atributo 'lang' le dice al navegador el idioma de la página -->
+  <!-- 'head' y 'body' son "contenedores" hermanos -->
+  <head>
+    <!-- Lo que es importante para que el browser cargue el proyecto de la forma en que nosotros lo construimos, pero que no es visual para el usuario final -->
+    <!-- Las etiquetas meta le dan info al browser acerca de cómo tiene que tratar nuestro proyecto -->
+    <meta charset="UTF-8">
+    <!-- El atributo 'description' sirve mucho para el SEO de la página que estemos desarrollando -->
+    <meta name="description" content="Esta página te mostrará fotos de gatos">
+    <!-- Útil para que los robots de los buscadores nos ayuden con el posicionamiento de nuestra web -->
+    <meta name="robots" content="index,follow">
+    <title>Es mi página</title>
+    <!-- Este 'meta' tag es para que la web escale de acuerdo al dispositivo que esté usando el usuario y que podamos hacer que noestra web sea 100% responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <!-- 2 tipos de etiquetas: DE CONTENIDO y CONTENEDORAS -->
+
+    <!-- INICIO DE ETIQUETAS CONTENEDORAS, PARTE DEL LAYOUT Y DE LA SEMÁNTICA DEL HTML -->
+    <header> <!-- Sección superior de nuestro website --> 
+      <nav></nav> <!-- Sección de navegación de nuestro website, siempre dentro del header -->
+    </header>
+
+    <main> <!-- Main es el contenido central de nuestro website, "la parte del medio" -->
+      <section> 
+        <!-- Nuestro website puede estar divido por secciones, por ejemplo platzi tiene 3: El navegador de cursos y rutas, el feed y nuestras rutas de aprendizaje -->
+        <article>
+          <!--Contenido independiente de la página. Es reutilizable -->
+        </article>
+      </section>
+      <ul> <!--Lista desordenada: Sin numerar -->
+        <li><!-- List Item. Elementos de la lista --></li>
+      </ul>
+      <ol></ol> <!-- Lista ordenada: Numerada -->
+    </main>
+
+    <footer><!-- Sección final de nuestro website --></footer>
+    <!-- FIN DE ETIQUETAS CONTENEDORAS -->
+
+    <p>Soy un texto</p> <!-- Párrafo, texto -->
+    <h1>Soy un titulo</h1> 
+    <!-- Títulos, muestran el texto más grande y en negrita. Existen desde el h1 al h6 -->
+    <a href="#">Soy un link</a>
+    <!-- Enlaces/links que nos permitirán movernos entre páginas. -->
+  </body>
+</html>

@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<!-- Hay etiquetas que tienen apertura y cierre y, otras, que tienen auto-cierre -->
 <html lang="es">
-  <!-- El atributo 'lang' le dice al navegador el idioma de la página -->
-  <!-- 'head' y 'body' son "contenedores" hermanos -->
   <head>
-    <!-- Lo que es importante para que el browser cargue el proyecto de la forma en que nosotros lo construimos, pero que no es visual para el usuario final -->
-    <!-- Las etiquetas meta le dan info al browser acerca de cómo tiene que tratar nuestro proyecto -->
     <meta charset="UTF-8">
-    <!-- El atributo 'description' sirve mucho para el SEO de la página que estemos desarrollando -->
-    <meta name="description" content="Esta página te mostrará fotos de gatos">
-    <!-- Útil para que los robots de los buscadores nos ayuden con el posicionamiento de nuestra web -->
+    <meta name="description" content="Esta página te mostrará la lista del super">
     <meta name="robots" content="index,follow">
-    <title>Es mi página</title>
-    <!-- Este 'meta' tag es para que la web escale de acuerdo al dispositivo que esté usando el usuario y que podamos hacer que noestra web sea 100% responsive -->
+    <title>La lista de la compra 🛒</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <!-- 2 tipos de etiquetas: DE CONTENIDO y CONTENEDORAS -->
-
-    <!-- INICIO DE ETIQUETAS CONTENEDORAS, PARTE DEL LAYOUT Y DE LA SEMÁNTICA DEL HTML -->
-    <header> <!-- Sección superior de nuestro website --> 
-      <nav></nav> <!-- Sección de navegación de nuestro website, siempre dentro del header -->
+    <header>
+      <h1>Lista del super 🛒</h1>
     </header>
-
-    <main> <!-- Main es el contenido central de nuestro website, "la parte del medio" -->
-      <section> 
-        <!-- Nuestro website puede estar divido por secciones, por ejemplo platzi tiene 3: El navegador de cursos y rutas, el feed y nuestras rutas de aprendizaje -->
-        <article>
-          <!--Contenido independiente de la página. Es reutilizable -->
-        </article>
-      </section>
-      <ul> <!--Lista desordenada: Sin numerar -->
-        <li><!-- List Item. Elementos de la lista --></li>
+    <main>
+      <ul>
+        <li>
+          Frutas:
+          <ol>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=mermelada+de+kiwi&ei=e2sVY76LG-3P1sQP06ORyAM&oq=mermelada&gs_lcp=Cgdnd3Mtd2l6EAMYADIECAAQQzIECAAQQzILCC4QgAQQsQMQgwEyBAgAEEMyCAgAEIAEELEDMgUIABCABDIECAAQQzIECAAQQzIICAAQgAQQsQMyCAgAEIAEELEDOgoIABBHENYEELADOgsIABCABBCxAxCDAToUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6CwguEIAEEMcBENEDOggIABCxAxCDAToOCC4QgAQQsQMQxwEQrwE6DgguEIAEELEDEMcBENEDOgsILhCABBDHARCvAToHCC4QsQMQQzoXCC4QgAQQsQMQgwEQxwEQ0QMQ1AIQyQM6BQgAEJIDSgQIQRgASgQIRhgAUK0JWKMQYJohaANwAXgAgAFfiAGSBpIBATmYAQCgAQHIAQjAAQE&sclient=gws-wiz">Kiwi</a>
+              🥝
+            </li>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=budin+de+banana&ei=5WsVY-XgAsHM1sQPjsq5aA&ved=0ahUKEwil597s2fz5AhVBppUCHQ5lDg0Q4dUDCA4&uact=5&oq=budin+de+banana&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyCwguEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQRxDWBBCwAzoHCC4Q1AIQQzoECC4QQzoKCC4QsQMQgwEQQzoOCC4QgAQQsQMQxwEQ0QM6CAguEIAEELEDOggIABCABBCxAzoLCAAQgAQQsQMQgwE6BwgAEIAEEAo6BAgAEAo6CgguEMcBEK8BEAo6CgguELEDEIMBEA06BwguELEDEA06BAgAEA1KBAhBGABKBAhGGABQvgxYmi1gui5oCHABeACAAcUBiAGNEJIBBDEyLjeYAQCgAQHIAQjAAQE&sclient=gws-wiz">Banana</a>
+              🍌
+            </li>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=limonada+de+sandia&ei=IGwVY8EVmd_WxA-xg7iQAQ&ved=0ahUKEwjBpe2I2vz5AhWZr5UCHbEBDhIQ4dUDCA4&uact=5&oq=limonada+de+sandia&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIECAAQQzIGCAAQHhAWMgYIABAeEBY6CggAEEcQ1gQQsAM6BwgAELADEEM6CwgAEIAEELEDEIMBOgsILhCABBCxAxCDAToLCC4QsQMQgwEQ1AI6DgguEIAEELEDEMcBENEDOggIABCxAxCDAToECAAQAzoICC4QgAQQsQM6CggAELEDEIMBEEM6BwgAELEDEEM6CgguELEDENQCEEM6CgguELEDEIMBEEM6BQguEIAESgQIQRgASgUIQBIBMUoECEYYAFCqCFjNKGDTKWgDcAF4AIABbYgBxAuSAQQxNy4xmAEAoAEByAEJwAEB&sclient=gws-wiz">Sandía</a>
+              🍉
+            </li>
+          </ol>
+        </li>
+        <li>
+          Carnes:
+          <ol>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=pollo+frito&ei=MmwVY87CDazc1sQPgcCEiA0&ved=0ahUKEwjOo8WR2vz5AhUsrpUCHQEgAdEQ4dUDCA4&uact=5&oq=pollo+frito&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgsILhCABBCxAxCDATIICAAQgAQQsQMyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOgcIABCwAxBDOgcILhCwAxBDOgQIABBDOgoIABCxAxCDARBDOgsILhCABBDHARDRAzoICAAQsQMQgwE6CAguELEDEIMBOgsILhCxAxCDARDUAjoOCC4QgAQQsQMQxwEQ0QM6CAguEIAEENQCOgQILhBDOggIABCABBDJAzoFCAAQkgM6CgguELEDENQCEEM6BwguELEDEEM6BwguENQCEEM6DggAEIAEELEDEIMBEMkDOgsILhCABBDHARCvAUoECEEYAEoECEYYAFDzCVirFGC9FmgDcAF4AIABdIgBvAeSAQQxMC4xmAEAoAEByAEKwAEB&sclient=gws-wiz">Pollo</a>
+              🍗
+            </li>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=recetas+con+atun&ei=dGwVY5GzELHY1sQP4uaYmAo&ved=0ahUKEwiRvYSx2vz5AhUxrJUCHWIzBqMQ4dUDCA4&uact=5&oq=recetas+con+atun&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgoIABBHENYEELADOgcIABCwAxBDOg0IABDkAhDWBBCwAxgBOg8ILhDUAhDIAxCwAxBDGAI6DAguEMgDELADEEMYAjoECAAQQzoECC4QQzoLCC4QgAQQsQMQgwE6BwgAELEDEEM6CwgAEIAEELEDEIMBSgQIQRgASgQIRhgBUOkHWM4XYK4baANwAXgAgAFXiAGQCZIBAjE2mAEAoAEByAESwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz">Atún</a>
+              🐟
+            </li>
+          </ol>
+        </li>
+        <li>
+          Verduras:
+          <ol>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=guacamole&ei=pGwVY-aAEOjV1sQP7LyrkAk&ved=0ahUKEwjm4vXH2vz5AhXoqpUCHWzeCpIQ4dUDCA4&uact=5&oq=guacamole&gs_lcp=Cgdnd3Mtd2l6EAMyBwguELEDEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyCwgAEIAEELEDEIMBMgQIABBDMgUIABCABDIECAAQQzoKCAAQRxDWBBCwAzoHCAAQsAMQQzoNCAAQ5AIQ1gQQsAMYAToMCC4QyAMQsAMQQxgCOgQILhBDOhEILhCABBCxAxCDARDHARDRAzoICAAQgAQQsQM6CAguELEDEIMBOhEILhCABBCxAxCDARDHARCvAToKCC4QsQMQgwEQQzoNCC4QsQMQgwEQ1AIQQzoLCC4QgAQQsQMQgwE6CAguEIAEELEDSgQIQRgASgQIRhgBUPUIWJ8WYLMaaANwAXgAgAFhiAHHBZIBATmYAQCgAQHIARHAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz">Palta</a>
+              🥑
+            </li>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=salsa+de+tomate+casera&ei=u2wVY_r5Db7Z1sQP9-qDqA8&oq=salsa+de+tomate&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCAAQgAQyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6BwgAELADEEM6DQgAEOQCENYEELADGAE6DAguEMgDELADEEMYAjoECC4QQzoECAAQQzoLCC4QgAQQxwEQ0QM6DgguEIAEELEDEIMBENQCOhEILhCABBCxAxCDARDHARDRAzoUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6CAgAEIAEELEDOgsIABCABBCxAxCDAToKCC4QsQMQgwEQQzoKCAAQsQMQgwEQQzoHCC4QsQMQQzoLCC4QgAQQsQMQgwE6BQgAELEDSgQIQRgASgQIRhgBULoHWJgSYOUbaANwAXgAgAFdiAH8CJIBAjE1mAEAoAEByAETwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz">Tomate</a>
+              🍅
+            </li>
+            <li>
+              <a target="_blank" href="https://www.google.com/search?q=croquetas+de+zanahoria&ei=BW0VY6K8CIzQ1sQP-eOUuA8&ved=0ahUKEwji0o722vz5AhUMqJUCHfkxBfcQ4dUDCA4&uact=5&oq=croquetas+de+zanahoria&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyBAgAEEMyBQgAEIAEMgUIABCABDIECAAQQzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6BwgAELADEEM6BAguEEM6CggAELEDEIMBEEM6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoICC4QsQMQgwE6CgguELEDEIMBEEM6BwgAELEDEEM6CAgAEIAEELEDSgQIQRgASgQIRhgAUKIJWOAdYPoeaANwAXgAgAGmAYgBiw6SAQQyMC4ymAEAoAEByAEKwAEB&sclient=gws-wiz">Zanahoria</a>
+              🥕
+            </li>
+          </ol>
+        </li>
       </ul>
-      <ol></ol> <!-- Lista ordenada: Numerada -->
     </main>
-
-    <footer><!-- Sección final de nuestro website --></footer>
-    <!-- FIN DE ETIQUETAS CONTENEDORAS -->
-
-    <p>Soy un texto</p> <!-- Párrafo, texto -->
-    <h1>Soy un titulo</h1> 
-    <!-- Títulos, muestran el texto más grande y en negrita. Existen desde el h1 al h6 -->
-    <a href="#">Soy un link</a>
-    <!-- Enlaces/links que nos permitirán movernos entre páginas. -->
+    <footer>Creado con amor 💚</footer>
   </body>
 </html>
